@@ -17,7 +17,7 @@
 }
 
 .layout {
-  background-color: lightcyan;
+  /* background-color: lightcyan; */
   display: flex;
   gap: 12px;
   flex-direction: column;
@@ -58,7 +58,6 @@
   top: 350px;
   left: 75px;
   gap: 20px;
-  background-color: chartreuse;
   flex-direction: column;
 }
 .iphone16pro-card__top {
@@ -97,12 +96,10 @@
   gap: 10px;
   background-color: #0071e3;
   color: #ffffff;
-  border-radius: 18px;
+  border-radius: 999px;
   display: flex;
   justify-content: center;
 }
-/* .iphone16pro-card__bottom--smallbutton {
-} */
 .button__text {
   padding: 8px 16px 8px 16px;
   width: 75px;
@@ -111,3 +108,76 @@
   font-size: 14px;
   line-height: 20px;
 }
+
+.iphone16pro-card__bottom--smallbutton {
+  width: 66px;
+  height: 36px;
+  border-radius: 999px;
+  border: 1px solid;
+  border-color: rgba(41, 151, 255, 1);
+  display: flex;
+  justify-content: center;
+}
+.button__text__blue{
+  padding: 8px 20px 8px 20px;
+  text-align: center;
+  color: rgba(41, 151, 255, 1);
+}
+
+.iphone16 {
+  height: 500px;
+  background-image: url(./images/Figure2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  color: #f5f5f7;
+}
+
+.iphone16-card {
+  width: 241px;
+  height: 114px;
+  position: relative;
+  top: 36px;
+  left: 75px;
+  gap: 16x;
+  flex-direction: column;
+}
+
+.iphone16-card__bottom {
+  width: 241px;
+  height: 36px;
+  display: flex;
+  gap: 12px;
+  text-align: center;
+  justify-content: center;
+  margin-top: 12px;
+}
+.iphone16-card__bottom--bigbutton {
+  width: 107px;
+  height: 36px;
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1) ;
+  border-radius: 999px;
+  display: flex;
+  justify-content: center;}
+  
+  .iphone16-card__bottom--smallbutton {
+    width: 66px;
+    height: 36px;
+    border-radius: 999px;
+    border: 1px solid;
+    border-color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+  }
+  .button__text__white{
+    padding: 8px 20px 8px 20px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);}
+
+
+
+
+
+
