@@ -16,11 +16,9 @@
   background-color: rgba(245, 245, 247, 0.8);
 }
 
-.layout {
-  /* background-color: lightcyan; */
-  display: flex;
-  gap: 12px;
-  flex-direction: column;
+.background {
+  background-position: center;
+  margin-top: 12px;
 }
 
 .header__items {
@@ -203,7 +201,7 @@
   height: 79x;
   gap: 8px;
   display: flex;
-  justify-content: center;
+  align-items: center;
   text-align: center;
   flex-direction: column;
 }
@@ -221,16 +219,21 @@
   justify-content: center;
 }
 
-.ipad-card__colorfultext {
-  margin-top: 295px;
-
-  display: flex;
+.ipad-card__bottom-text {
   justify-content: center;
+  align-items: center;
+  margin-top: 320.14px;
+}
+.ipad__colortext {
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: normal;
   font-size: 14px;
   background: linear-gradient(to right, #0090f7, #ba62fc, #f2416b, #f55600);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
+
 .airpods4 {
   height: 500px;
   background-image: url(./images/airpods4.png);
@@ -239,6 +242,17 @@
   align-items: center;
   color: #f5f5f7;
 }
+.airpods4__card {
+  width: 100%;
+  height: 135px;
+  gap: 20px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 299px;
+}
+
 .iwatch {
   background-image: url(./images/watch.png);
   height: 500px;
@@ -264,9 +278,9 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  flex-direction: column;   
+  flex-direction: column;
 }
-.iwatch__card__top__watchandseries{
+.iwatch__card__top__watchandseries {
   height: 54px;
   display: flex;
   justify-content: center;
@@ -275,7 +289,7 @@
   flex-direction: column;
 }
 
-.iwatch__card__top__watchandseries__watch{
+.iwatch__card__top__watchandseries__watch {
   height: 34px;
   display: flex;
   gap: 4px;
@@ -284,7 +298,7 @@
 }
 .apple-vector {
   width: 22px;
-  height: 27px;    
+  height: 27px;
 }
 .iwatch__bigtext {
   font-size: 28px;
@@ -292,7 +306,7 @@
   text-align: center;
 }
 
-.iwatch__mediumtext{
+.iwatch__mediumtext {
   height: 16px;
   font-weight: 700;
   font-size: 13px;
@@ -344,14 +358,7 @@
   text-align: center;
   justify-content: center;
 }
-.small-business {
-  height: 500px;
-  background-image: url(./images/smallbusiness.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  align-items: center;
-  color: #1d1d1f;
-}
+
 .small-business__card {
   width: 100%;
   height: 168px;
@@ -371,193 +378,244 @@
   text-align: center;
   flex-direction: column;
 }
-  .small-business__bigtext{
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+.small-business__bigtext {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
-  .small-business__smalltext {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 20px;
-    color:rgba(29, 29, 31, 1);
-    text-align: center;
+.small-business__smalltext {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgba(29, 29, 31, 1);
+  text-align: center;
 }
-  .small-business__card__bottom {
-    height: 36px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
+.small-business__card__bottom {
+  height: 36px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
-  .small-business__card__bottom--button {
-    gap: 10px;
-    background-color:#0071E3;
-    border-radius: 999px;
-    padding: 8px 16px 8px 16px;
-    width: 107px; 
+.small-business__card__bottom--button {
+  gap: 10px;
+  background-color: #0071e3;
+  border-radius: 999px;
+  padding: 8px 16px 8px 16px;
+  width: 107px;
 }
-  .small-business__button__text {
-    color: rgba(245, 245, 247, 1);
-    width: 75px;
-    height: 20px;
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
+.small-business__button__text {
+  color: rgba(245, 245, 247, 1);
+  width: 75px;
+  height: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
 }
-  .carrier {
-    height: 500px;
-    background-image: url(./images/carrier\ figure.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-items: center;
-    color: #1d1d1f;
+.carrier {
+  height: 500px;
+  background-image: url(./images/carrier\ figure.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  color: #1d1d1f;
 }
-  .carrier__card {
-    width: 100%;
-    height: 130px;
-    gap: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    top: 301px;
+.small-business {
+  height: 500px;
+  background-image: url(./images/smallbusiness.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  color: #1d1d1f;
 }
-  .carrier__card__top {
-    width: 100%;
-    height: 100px;
-    gap: 4px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+.carrier__card {
+  width: 100%;
+  height: 130px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  top: 301px;
 }
-  .carrier__bigtext{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    text-align: center;
+.carrier__card__top {
+  width: 100%;
+  height: 100px;
+  gap: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
-  .carrier__smalltext {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 20px;
-    color:rgba(29, 29, 31, 1);
-    margin-left: 38px;
-    margin-right: 38px;
-
+.carrier__bigtext {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
 }
-  .carrier__card__bottom {
-    height: 36px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
+.carrier__smalltext {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgba(29, 29, 31, 1);
+  margin-left: 38px;
+  margin-right: 38px;
 }
-
-  .carrier__card__bottom--button {
-    gap: 10px;
-    background-color:#0071E3;
-    border-radius: 999px;
-    padding: 8px 16px 8px 16px;
-    width: 126px; 
-}
-  .carrier__button__text {
-    color: rgba(245, 245, 247, 1);
-    width: 94px;
-    height: 20px;
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
-}
-  .trade-in {
-    height: 500px;
-    background-image: url(./images/trade-in.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-items: center;
-    color: #1d1d1f;
-}
-  .trade-in__card {
-    width: 100%;
-    height: 130px;
-    gap: 16px;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 51px;
-}
-  .trade-in__card__top {
-    width: 100%;
-    height: 78px;
-    gap: 4px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;   
-}
-  .trade-in__card__top__1{
-    height: 34px;
-    display: flex;
-    justify-content: center;
-    gap: 7px;
-}
-  .apple-vector {
-    width: 22px;
-    height: 27px;    
-}
-  .trade-in__bigtext {
-    font-size: 28px;
-    line-height: 33.89px;
-}
-  .trade-in__smalltext {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 20px;
-    margin-left: 51px;
-    margin-right: 52px;  
+.carrier__card__bottom {
+  height: 36px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
-  .trade-in__card__bottom {
-    height: 36px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
+.carrier__card__bottom--button {
+  gap: 10px;
+  background-color: #0071e3;
+  border-radius: 999px;
+  padding: 8px 16px 8px 16px;
+  width: 126px;
+}
+.carrier__button__text {
+  color: rgba(245, 245, 247, 1);
+  width: 94px;
+  height: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+.trade-in {
+  height: 500px;
+  background-image: url(./images/trade-in.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  color: #1d1d1f;
+}
+.trade-in__card {
+  width: 100%;
+  height: 130px;
+  gap: 16px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 51px;
+}
+.trade-in__card__top {
+  width: 100%;
+  height: 78px;
+  gap: 4px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.trade-in__card__top__1 {
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+}
+.apple-vector {
+  width: 22px;
+  height: 27px;
+}
+.trade-in__bigtext {
+  font-size: 28px;
+  line-height: 33.89px;
+}
+.trade-in__smalltext {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-left: 51px;
+  margin-right: 52px;
 }
 
-  .trade-in__card__bottom--button {
-    gap: 10px;
-    background-color:#0071E3;
-    color:rgba(255, 255, 255, 1);
-    border-radius: 999px;
-    padding: 8px 16px 8px 16px;
-    width: 150px;
+.trade-in__card__bottom {
+  height: 36px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
-  .trade-in__button__text {
-    color: rgba(245, 245, 247, 1);
-    width: 94px;
-    height: 20px;
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
+
+.trade-in__card__bottom--button {
+  gap: 10px;
+  background-color: #0071e3;
+  color: rgba(255, 255, 255, 1);
+  border-radius: 999px;
+  padding: 8px 16px 8px 16px;
+  width: 150px;
 }
-  .animation {
+.trade-in__button__text {
+  color: rgba(245, 245, 247, 1);
+  width: 94px;
+  height: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+.animation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+}
+
+.movie__container {
+  display: flex;
+  gap: 16px;
+  overflow: scroll;
+}
+
+.dot-scroll {
+  margin-left: 7px;
+}
+.movie__container__tablet {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .iphone16pro {
+    height: 650px;
+    background-image: url(./images/appleprotablet.png);
+  }
+  .iphone-card {
+    top: 58px;
+  }
+  .iphone16 {
+    height: 650px;
+    background-image: url(./images/iphone16tablet.png);
+  }
+  .ipad {
+    height: 650px;
+    background-image: url(./images/ipadtablet.png);
+  }
+
+  .ipad-card__bottom-text {
+    margin-top: 438.14px;
+  }
+  .ipad__colortext {
+    font-size: 20px;
+  }
+
+  .tablet-mode {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: scroll;
+    flex-wrap: wrap;
+    gap: 0 12px;
+  }
+  .tablet {
+    width: 49%;
   }
 
   .movie__container {
+    display: none;
+  }
+
+  .movie__container__tablet {
     display: flex;
     gap: 16px;
     overflow: scroll;
   }
-
-  .dot-scroll {
-    margin-left: 7px;
-  }
-
-
+}
