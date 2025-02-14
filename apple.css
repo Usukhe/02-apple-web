@@ -619,3 +619,17 @@
     overflow: scroll;
   }
 }
+
+@media only screen and (min-width: 1123px) {
+  .header {
+    display: none;
+  }
+  .web__header {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(245, 245, 247, 0.8);
+    gap: 24px;
+  }
+}
