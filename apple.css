@@ -576,6 +576,78 @@
 .movie__container__tablet {
   display: none;
 }
+
+.footer {
+  height: 216px;
+  /* background-color: #0071e3; */
+  display: flex;
+  flex-direction: column;
+}
+.slider-container {
+  margin-top: 16px;
+  height: 160px;
+  /* background-color: #ba62fc; */
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+}
+.slider {
+  /* background-color: #f2416b; */
+  display: flex;
+  gap: 6px;
+  animation: slide 20s linear infinite;
+  transform: translateX(100%);
+  scroll-snap-type: x mandatory;
+  white-space: nowrap;
+}
+.slider:hover {
+  animation-play-state: paused;
+}
+.slider-item {
+  display: flex;
+  height: 134px;
+  flex-direction: column;
+  cursor: pointer;
+  width: 70%;
+}
+.slider-item__image {
+  height: 134px;
+  width: 238px;
+}
+.slider-item__text {
+  width: 149px;
+  height: 15px;
+  font-family: inter;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: normal;
+  display: flex;
+  flex-direction: column;
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.footer__bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.footer__button {
+  margin-right: 16px;
+  margin-top: 8px;
+}
+
+.web__header {
+  display: none;
+}
 @media only screen and (min-width: 768px) {
   .iphone16pro {
     height: 650px;
@@ -617,6 +689,9 @@
     display: flex;
     gap: 16px;
     overflow: scroll;
+  }
+  .web__header {
+    display: none;
   }
 }
 
